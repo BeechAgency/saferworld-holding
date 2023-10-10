@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from './Layout'
 import Header from './components/header/Header'
-import MailchimpForm from './components/mailchimpForm/mailchimpForm'
+import MailchimpForm from './components/mailchimpForm/MailchimpForm'
 import LogoGrid from './components/logoGrid/LogoGrid'
 
 
