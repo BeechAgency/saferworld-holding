@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import jsonp from 'jsonp';
 
 
-const formUrl = 'https://micahaustralia.us10.list-manage.com/subscribe/post?u=23c18cced86d3cc69289b206c&amp;id=809b06b2ae&amp;f_id=007cd1e5f0';
+const formUrl = ''; //'https://micahaustralia.us10.list-manage.com/subscribe/post?u=23c18cced86d3cc69289b206c&amp;id=809b06b2ae&amp;f_id=007cd1e5f0';
 
 export default function MailchimpForm({ callBack }) {
     const [email, setEmail] = useState('');
