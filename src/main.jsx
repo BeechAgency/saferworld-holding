@@ -7,7 +7,7 @@ import {
 } from "react-router-dom"
 import './fonts.css'
 import './index.css'
-import Acfid from './acfid.jsx'
+import Acfid from './Acfid.jsx'
 import Error from './Error.jsx'
 
 const router = createBrowserRouter([
