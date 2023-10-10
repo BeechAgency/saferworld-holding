@@ -1,0 +1,125 @@
+:root {
+  /*
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  */
+
+  --text-root : 18px;
+  --text-scale : 1.25;
+  --text-base : 1rem;
+  --text-root-fluid: clamp(var(--text-root), 1vw, 1.1713vw);
+
+  --leading-body: 1.3;
+  --leading-headings: 1.1;
+
+  --text-7xl : calc(1rem * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) );
+  --text-6xl : calc(1rem * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) );
+  --text-5xl : calc(1rem * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale)  );
+  --text-4xl : calc(1rem * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) );
+  --text-3xl : calc(1rem * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) );
+  --text-2xl : calc(1rem * var(--text-scale) * var(--text-scale) * var(--text-scale) );
+  --text-xl : calc(1rem * var(--text-scale) * var(--text-scale) );
+  --text-lg : calc(1rem * var(--text-scale) );
+  --text-md : 1rem;
+  --text-sm : calc(1rem / var(--text-scale) );
+  --text-xs: calc(1rem / var(--text-scale) / var(--text-scale) );
+  --text-2xs: calc(1rem / var(--text-scale) / var(--text-scale) / var(--text-scale) );
+
+  --font-headings : 'MARTIN', Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-sans: 'Work Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-mono: 'roboto-mono', ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+
+  --font-light : 200;
+  --font-normal : 400;
+  --font-bold: 700;
+  --font-black: 900;
+
+
+  --clr-storm : #171714; 
+  --clr-oatmeal : #f0e5c9;
+  --clr-red : #f54042;
+  --clr-marine : #65c4a6;
+  --clr-maize : #f9b629;
+  --clr-periwinkle : #7b8be6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  font-family: var(--font-sans);
+  line-height: var(--leading-body);
+  font-weight: 400;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html,body {
+    margin: 0;
+    padding: 0;
+
+    font-size: var(--text-root-fluid);
+    font-family: var(--font-sans);
+    line-height: var(--leading-body);
+
+    -webkit-font-smoothing: antialiased; 
+    text-rendering: geometricPrecision;
+    
+    tab-size: 4;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  line-height: var(--leading-headings);
+  font-family: var(--font-headings);
+}
+
+h2 {
+  font-size: var(--text-5xl);
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.bg-storm { background-color: var(--clr-storm); color: white;}
+.bg-white { background-color: white; color: var(--clr-storm);}
+.bg-oatmeal { background-color: var(--clr-oatmeal); }
+
+.clr-storm { color: var(--clr-storm); --clr: var(--clr-storm); }
+.clr-red { color: var(--clr-red); --clr: var(--clr-red); }
+.clr-oatmeal { color: var(--clr-oatmeal); --clr: var(--clr-oatmeal); }
+.clr-marine { color: var(--clr-marine); --clr: var(--clr-marine); }
+.clr-maize { color: var(--clr-maize); --clr: var(--clr-maize); }
+.clr-periwinkle { color: var(--clr-periwinkle); --clr: var(--clr-periwinkle); }
+
+
+input:not([type="submit"]) {
+  color: currentColor;
+  background-color: transparent;
+  border: solid 1px currentColor;
+  padding: 0.5rem;
+  font-size: var(--text-md);
+  width: 100%;
+}
+
+input[type="submit"], button {
+  font-family: var(--font-headings);
+  font-size: var(--text-5xl);
+  text-transform: uppercase;
+  background-color: var(--clr-maize);
+  border-color: transparent;
+  max-width: fit-content;
+  margin-inline: auto;
+  line-height: 0.8;
+  padding: 0rem 1rem;
+  margin-top: 1rem;
+}
+button span {
+  display: block;
+  translate: 0rem -0.25rem;
+}
+.sr-only {
+  visibility: hidden;
+  display: none;
+}

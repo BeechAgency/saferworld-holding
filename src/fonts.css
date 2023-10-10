@@ -1,0 +1,28 @@
+
+/* Custom Font 1 */
+@font-face {
+    font-family: 'MARTIN';
+    src: url('./assets/fonts/MARTIN-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Custom Font 2 */
+  @font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/WorkSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/WorkSans-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/WorkSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
