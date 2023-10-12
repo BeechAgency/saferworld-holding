@@ -9,10 +9,13 @@ function App() {
 
   return (
     <Layout>
-      <Header displayCTA={false} />
-      <section>
+      <Header 
+        displayCTA={false} 
+        text='A new campaign making the modern case for Australian Aid.'
+      /> 
+      {/*<section>
         <LogoGrid />
-      </section>
+      </section>*/ }
     </Layout>
   )
 }

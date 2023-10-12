@@ -13,21 +13,17 @@ export default function Acfid() {
     return (
         <Layout>
             <Header />
-            <section><p>Integer vulputate urna libero, vitae efficitur 
-nunc faucibus in. Duis pretium ante in 
-vestibulum vulputate. Nulla lobortis nulla 
-eget finibus condimentum. Fusce dictum, 
-purus et ullamcorper pharetra, leo magna 
-laoreet sapien, eget ultricies risus justo at 
-sem. Duis pulvinar faucibus erat ac gravida. 
-Sed ac tristique ex, in accumsan turpis. Sed 
-maximus mi non enim viverra sodales.</p></section>
+            <section>
+                <p>The world is getting hotter, new conflicts are erupting, and inequality is rising. We will squander two decades of global co-operation and progress if we do nothing.</p>
+                <p>Decisions made by this generation can put our region and world back on the path to progress, peace and prosperity. </p>
+                <p>This is best for the world and best for Australia. But it won’t happen on its own. We must invest to create a safer world for all.</p>
+            </section>
             <section className="form-block">
                 <MailchimpForm callBack={formCallBack} />
             </section>
-            <section>
+            {/*<section>
                 <LogoGrid />
-            </section>
+            </section>*/ }
         </Layout>
         
     )
