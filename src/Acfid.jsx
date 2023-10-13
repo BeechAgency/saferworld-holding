@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from './Layout'
 import Header from './components/header/Header'
 import MailchimpForm from './components/mailchimpForm/MailchimpForm'
@@ -7,9 +7,11 @@ import LogoGrid from './components/logoGrid/LogoGrid'
 
 
 export default function Acfid() {
+    const [formDone, setFormDone] = useState(false);
     const formCallBack = ( msg = false ) => {
-      console.log("CB Yo!", msg)
+      setFormDone(true);
     }
+
     return (
         <Layout>
             <Header />
@@ -19,7 +21,7 @@ export default function Acfid() {
                 <p>This is best for the world and best for Australia. But it won’t happen on its own. We must invest to create a safer world for all.</p>
             </section>
             <section className="form-block">
-                <MailchimpForm callBack={formCallBack} />
+                { !formDone ? <MailchimpForm callBack={formCallBack} /> : <p>Thanks, we'll be in touch soon.</p> }
             </section>
             {/*<section>
                 <LogoGrid />

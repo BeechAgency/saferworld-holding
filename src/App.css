@@ -24,7 +24,7 @@ section {
 }
 
 footer {
-  margin-top: 4rem;
+  /*margin-top: 4rem;*/
   padding-block: 4rem 4rem;
   font-size: var(--text-sm);
 }
