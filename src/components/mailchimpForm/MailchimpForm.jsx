@@ -22,7 +22,7 @@ export default function MailchimpForm({ callBack }) {
 
         console.log('Submitty');
 
-        if(honey !== '') return console.log('No submitty, you got honey');
+        //if(honey !== '') return console.log('No submitty, you got honey');
 
         jsonp(
             `${formUrl}&EMAIL=${email}&FNAME=${firstName}&LNAME=${lastName}&ORG=${org}&ROLE=${role}`, 
