@@ -11,7 +11,7 @@ export default function MailchimpForm({ callBack }) {
     const [org, setOrg] = useState('');
     const [role, setRole] = useState('');
 
-    const [honey, setHoney] = useState();
+    const [honey, setHoney] = useState('');
 
     function doThing() {
         console.log('A thing was done');
@@ -20,12 +20,15 @@ export default function MailchimpForm({ callBack }) {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        if(honey !== '') return false;
+        console.log('Submitty');
+
+        if(honey !== '') return console.log('No submitty, you got honey');
 
         jsonp(
             `${formUrl}&EMAIL=${email}&FNAME=${firstName}&LNAME=${lastName}&ORG=${org}&ROLE=${role}`, 
             { param : 'c' }, 
             function (error, data) {
+                console.log('Doing a thing, ', error, data);
                 if(error) throw error;
 
                 console.log(error, data);
