@@ -9,15 +9,21 @@ import './fonts.css'
 import './index.css'
 import Acfid from './Acfid.jsx'
 import Error from './Error.jsx'
+import HFF from './HFF.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <Error />
-  },{
+    errorElement: <Error />,
+  },
+  {
     path: "/acfid",
     element: <Acfid />,
+  },
+  {
+    path: "/hff",
+    element: <HFF />,
   },
 ]);
 
